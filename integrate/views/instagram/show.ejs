@@ -1,0 +1,40 @@
+<%- include('../partials/head')%>
+    <%- include('../partials/navbar')%>
+
+        <link rel="stylesheet" href="/css/instagram.css">
+
+        <div class="mx-auto card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-6 img-container">
+                    <img class="comment-img" src="<%=post.image%>" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=post.username%>
+                        </h5>
+                        <p>
+                            <%=post.caption%>
+                        </p>
+                        <a href="/instagram/<%=post.id%>/edit">Edit caption</a>
+                        <hr>
+                        <%for (let c of post.comments) {%>
+                            <p class="card-text"><b>
+                                    <%=c.user%>
+                                </b>
+                                <%=c.comment%>
+                            </p>
+                            <%}%>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <a href="/instagram">Back</a>
+
+                    </div>
+                </div>
+                <form action="/instagram/<%=post.id%>?_method=DELETE" method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+
+
+        <%- include('../partials/footer')%>

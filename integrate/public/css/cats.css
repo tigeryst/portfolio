@@ -1,0 +1,9 @@
+h1 {
+    font-family: 'Inconsolata', monospace;
+}
+
+main p {
+    font-family: 'Inconsolata', monospace;
+    color: red;
+    width: 500px;
+}
