@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import Article from "../models/article.js";
+import Article from "./models/article.js";
 
 const app = express();
 
