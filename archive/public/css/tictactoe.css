@@ -1,0 +1,24 @@
+/* Stylesheet for Tic Tac Toe Board */
+h1 {
+    font-family: 'Saira Stencil One', cursive;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.horizontal {
+    border-top: solid 3px grey;
+    border-bottom: solid 3px grey;
+}
+
+.vertical {
+    border-left: solid 3px grey;
+    border-right: solid 3px grey;
+}

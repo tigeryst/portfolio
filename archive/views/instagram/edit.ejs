@@ -1,0 +1,13 @@
+<%- include('../partials/head')%>
+    <%- include('../partials/navbar')%>
+
+        <h1>Edit</h1>
+        <form method="post" action="/instagram/<%=post.id%>/?_method=PATCH">
+            <textarea name="caption" id="caption" cols="30" rows="10"><%=post.caption%></textarea>
+            <br>
+            <button type="button" class="btn btn-secondary"
+                onclick="location.href='/instagram/<%=post.id%>'">Back</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+        <%- include('../partials/footer')%>

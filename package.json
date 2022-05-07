@@ -1,17 +1,17 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
+  "name": "tiger-yotsawat",
+  "version": "0.0.1",
   "description": "",
   "main": "src/server/index.js",
   "type": "module",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "npm run build && node src/server/index.js",
+    "start": "npm run build && node server/index.js",
     "watch-client": "npx webpack serve --open --config webpack.dev.js",
-    "watch-server": "nodemon -r dotenv/config src/server/index.js",
+    "watch-server": "nodemon -r dotenv/config server/index.js",
     "dev": "concurrently --kill-others-on-fail \"npm:watch-*\""
   },
-  "author": "",
+  "author": "Tiger Yotsawat",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
@@ -45,6 +45,7 @@
     "eslint-config-prettier": "^8.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.16",
     "prettier": "^2.3.2",
     "style-loader": "^3.2.1",
     "url-loader": "^4.1.1",

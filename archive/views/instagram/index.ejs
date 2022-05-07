@@ -1,0 +1,30 @@
+<%- include('../partials/head')%>
+    <%- include('../partials/navbar')%>
+
+        <link rel="stylesheet" href="/css/instagram.css">
+
+        <div class="insta-head">
+            <h1>Instagram</h1>
+            <a href="/instagram/new"><i class="far fa-plus-square fa-3x"></i></a>
+        </div>
+        <ul class="post">
+            <%for (let post of posts) {%>
+                <li class="card mx-auto" style="width: 30rem;">
+                    <p class="card-title">
+                        <b>
+                            <%=post.username%>
+                        </b>
+                    </p>
+                    <img src="<%=post.image%>" class="card-img-top square mx-auto" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <%=post.caption%>
+                        </p>
+                        <a href="/instagram/<%=post.id%>">View comments</a>
+                    </div>
+                </li>
+                <br>
+                <%}%>
+        </ul>
+
+        <%- include('../partials/footer')%>
