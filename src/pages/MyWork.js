@@ -41,4 +41,4 @@ const MyWork = () => (
   </>
 );
 
-export { MyWork };
+export default MyWork;

@@ -19,9 +19,6 @@ export default {
       favicon: "./public/favicon.ico",
     }),
   ],
-  resolve: {
-    extensions: ["*", ".js", ".jsx"],
-  },
   module: {
     rules: [
       {
@@ -30,10 +27,17 @@ export default {
         use: {
           loader: "babel-loader",
         },
+        resolve: {
+          fullySpecified: false,
+        },
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
