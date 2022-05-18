@@ -1,0 +1,32 @@
+@use "base";
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: base.$fw-reg;
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: base.$fs-h3;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: base.$clr-accent;
+  font-family: base.$ff-secondary;
+  padding: 0.25em 1em;
+  margin-bottom: 1em;
+}
+
+.section__subtitle--work {
+  color: base.$clr-accent;
+  font-weight: base.$fw-bold;
+  margin-bottom: 2em;
+}

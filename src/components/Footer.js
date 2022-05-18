@@ -61,8 +61,8 @@ function Footer() {
         </li>
       </ul>
       <p>
-        Portfolio site made by Tiger Yotsawat using ReactJS, Styled Components
-        and Icons from Font Awesome
+        Portfolio site made by Tiger Yotsawat using ReactJS, Styled Components,
+        icons from Font Awesome and images from Unsplash
       </p>
       <p>Copyright &copy; 2021</p>
     </footer>

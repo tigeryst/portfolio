@@ -1,0 +1,47 @@
+/* My projects section */
+@use "base";
+.my-projects {
+  background-color: base.$clr-dark;
+  // background-image: url(../images/projects-bg-2x.png);
+  background-size: cover;
+  /* background-blend-mode: multiply; */
+  color: base.$clr-light;
+  text-align: center;
+}
+
+.section__title--projects {
+  color: base.$clr-accent;
+  position: relative;
+}
+
+.section__title--projects::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: base.$clr-light;
+  opacity: 0.25;
+}
+
+.projects {
+  margin-bottom: 4em;
+}
+
+.project {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .projects {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project + .project {
+    margin-left: 2em;
+  }
+}

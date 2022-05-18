@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 class NavLinks extends React.Component {
   constructor(props) {
@@ -13,12 +13,16 @@ class NavLinks extends React.Component {
 
   render() {
     const navItems = Object.keys(this.props.links).map((name) => (
-      <li className="nav__item">
+      <li key={name} className="nav__item">
         <Link
-          key={name}
           to={this.props.links[name]}
           className="nav__link"
           onClick={this.handleClick}
+          smooth={true}
+          delay={0}
+          activeClass="nav__link--active"
+          spy={true}
+          offset={-45}
         >
           {name}
         </Link>

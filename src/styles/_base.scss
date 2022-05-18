@@ -1,0 +1,44 @@
+// General setup
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Custom properties
+
+// Breakpoints
+$bp-tablet: 600px;
+$bp-laptop: 800px;
+$bp-desktop: 1000px;
+
+// Font families
+$ff-primary: "Source Sans Pro", sans-serif;
+$ff-secondary: "Source Code Pro", monospace;
+
+// Font weights
+$fw-reg: 300;
+$fw-bold: 900;
+
+// Font sizes
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-h3: 1.25rem;
+$fs-body: 1rem;
+
+// Theme colours
+$clr-light: #fff;
+$clr-dark: #303030;
+$clr-accent: #78f1cd;
+
+// Shadows
+$bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
+@media (min-width: $bp-laptop) {
+  $fs-h1: 4.5rem;
+  $fs-h2: 3.75rem;
+  $fs-h3: 1.5rem;
+  $fs-body: 1.25rem;
+}
