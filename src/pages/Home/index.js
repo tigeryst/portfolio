@@ -16,7 +16,6 @@ const Home = () => {
       <Interests />
       <About />
       <Contact />
-      <p>Hello World</p>
     </>
   );
 };

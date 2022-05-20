@@ -2,46 +2,106 @@
 
 /* Intro section */
 
+// .intro {
+//   position: relative;
+// }
+
 .intro {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title--intro {
+  // display: flex;
+  // justify-content: center;
+  font-size: base.$fs-h1;
+  font-weight: base.$fw-bold;
+}
+
+.intro__roles {
+  // display: block;
+  max-width: max-content;
+  // background-color: base.$clr-accent;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 2em;
+  padding: 0;
+  // margin: 1em 0;
+  // padding: 0.5em 0.5em;
+  display: flex;
+}
+
+.intro__role {
+  font-size: base.$fs-body;
+  font-weight: base.$fw-bold;
+  text-transform: lowercase;
+  // margin-right: 1em;
+}
+
+.intro__role + .intro__role::before {
+  content:"|";
+  margin: 0 0.5em;
 }
 
 .intro__img {
   box-shadow: base.$bs;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
 
-.section__subtitle--intro {
-  display: inline-block;
+.intro__body {
+  margin-bottom: 2em;
 }
 
-@media (min-width: 600px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
-
-  .intro__img {
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-  }
+.intro__actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
 }
 
+// .section__subtitle--intro {
+//   display: inline-block;
+// }
 
+// @media (min-width: base.$bp-tablet) {
+//   .intro {
+//     display: grid;
+//     width: min-content;
+//     margin: 0 auto;
+//     grid-column-gap: 1em;
+//     grid-template-areas:
+//       "img title"
+//       "img roles"
+//       "img body"
+//       "img ";
+//     grid-template-columns: min-content max-content;
+//   }
+
+//   .intro__img {
+//     grid-area: img;
+//   }
+
+//   .section__title--intro {
+//     grid-area: title;
+//   }
+// }
+//     // min-width: 250px;
+//     position: relative;
+//     z-index: 2;
+//   }
+
+//   .section__subtitle--intro {
+//     align-self: start;
+//     grid-column: -1 / 1;
+//     grid-row: 2;
+//     text-align: right;
+//     position: relative;
+//     left: -1.5em;
+//     width: calc(100% + 1.5em);
+//   }
+// }

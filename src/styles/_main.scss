@@ -23,12 +23,6 @@ img {
 strong {
   font-weight: base.$fw-bold;
 }
-
-:focus {
-  outline: 2px solid base.$clr-accent;
-  outline-offset: 3px;
-}
-
 /* Buttons */
 
 .btn {
@@ -46,6 +40,11 @@ strong {
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: 2px solid base.$clr-accent;
+    outline-offset: 3px;
   }
 }
 
