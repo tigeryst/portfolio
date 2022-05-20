@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import runningImg from "../../images/interest-running.jpg";
 import readingImg from "../../images/interest-reading.jpg";
@@ -15,64 +16,64 @@ const Interests = () => {
       </p>
 
       <div className="interests">
-        <div className="interest">
-          <img src={cookingImg} alt="" className="interest__img" />
-          <div className="interest__overlay">
+        <div className="interest interest--cooking">
+          {/* <img src={cookingImg} alt="" className="interest__img" /> */}
+          {/* <div className="interest__overlay"> */}
             <h3>Cooking</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               iste recusandae! Illo recusandae ducimus odit magnam nemo, dolores
               quos expedita.
             </p>
-          </div>
+          {/* </div> */}
         </div>
 
-        <div className="interest">
-          <img src={artImg} alt="" className="interest__img" />
-          <div className="interest__overlay">
+        <div className="interest interest--art">
+          {/* <img src={artImg} alt="" className="interest__img" /> */}
+          {/* <div className="interest__overlay"> */}
             <h3>Art</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               iste recusandae! Illo recusandae ducimus odit magnam nemo, dolores
               quos expedita.
             </p>
-          </div>
+          {/* </div> */}
         </div>
 
-        <div className="interest">
-          <img src={travelImg} alt="" className="interest__img" />
-          <div className="interest__overlay">
-            <h3>Travels</h3>
+        <div className="interest interest--travel">
+          {/* <img src={travelImg} alt="" className="interest__img" /> */}
+          {/* <div className="interest__overlay"> */}
+            <h3>Travel</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               iste recusandae! Illo recusandae ducimus odit magnam nemo, dolores
               quos expedita.
             </p>
-          </div>
+          {/* </div> */}
         </div>
 
-        <div className="interest">
-          <img src={readingImg} alt="" className="interest__img" />
-          <div className="interest__overlay">
-            <h3>Books</h3>
+        <div className="interest interest--reading">
+          {/* <img src={readingImg} alt="" className="interest__img" /> */}
+          {/* <div className="interest__overlay"> */}
+            <h3>Reading</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               iste recusandae! Illo recusandae ducimus odit magnam nemo, dolores
               quos expedita.
             </p>
-          </div>
+          {/* </div> */}
         </div>
 
-        <div className="interest">
-          <img src={runningImg} alt="" className="interest__img" />
-          <div className="interest__overlay">
+        <div className="interest interest--running">
+          {/* <img src={runningImg} alt="" className="interest__img" /> */}
+          {/* <div className="interest__overlay"> */}
             <h3>Running</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               iste recusandae! Illo recusandae ducimus odit magnam nemo, dolores
               quos expedita.
             </p>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

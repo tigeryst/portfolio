@@ -37,30 +37,40 @@ export default {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/,
         use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-            },
-          },
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+          // "resolve-url-loader",
+          // { loader: "sass-loader", options: { sourceMap: true } },
         ],
       },
       {
-        test: /\.(pdf)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
+        type: "asset/resource",
       },
+      // {
+      //   test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/,
+      //   use: [
+      //     {
+      //       loader: "url-loader",
+      //       options: {
+      //         limit: 8192,
+      //       },
+      //     },
+      //   ],
+      // },
+      // {
+      //   test: /\.(pdf)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //       },
+      //     },
+      //   ],
+      // },
     ],
   },
 };

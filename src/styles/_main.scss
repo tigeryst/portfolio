@@ -48,6 +48,21 @@ strong {
   }
 }
 
+.btn--secondary {
+  color: inherit;
+  background: transparent;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: base.$clr-accent;
+}
+
+.btn--primary {
+  // color: inherit;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: base.$clr-accent;
+}
+
 /* Typography */
 
 %heading {

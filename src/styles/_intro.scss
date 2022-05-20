@@ -17,6 +17,7 @@
   // justify-content: center;
   font-size: base.$fs-h1;
   font-weight: base.$fw-bold;
+  color: base.$clr-accent;
 }
 
 .intro__roles {
@@ -30,6 +31,7 @@
   // margin: 1em 0;
   // padding: 0.5em 0.5em;
   display: flex;
+  // color: base.$clr-accent;
 }
 
 .intro__role {
@@ -50,6 +52,7 @@
   object-fit: cover;
   width: 300px;
   height: 300px;
+  margin-bottom: 1em;
 }
 
 .intro__body {

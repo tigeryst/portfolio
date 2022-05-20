@@ -17,12 +17,12 @@ class NavLinks extends React.Component {
         <Link
           to={this.props.links[name]}
           className="nav__link"
-          onClick={this.handleClick}
           smooth={true}
           delay={0}
           activeClass="nav__link--active"
-          spy={true}
+          // spy={true}
           offset={-45}
+          onClick={this.handleClick}
         >
           {name}
         </Link>

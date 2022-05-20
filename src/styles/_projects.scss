@@ -1,27 +1,32 @@
 /* My projects section */
 @use "base";
 .my-projects {
-  background-color: base.$clr-dark;
-  // background-image: url(../images/projects-bg-2x.png);
-  background-size: cover;
-  /* background-blend-mode: multiply; */
+  background: base.$clr-dark;
   color: base.$clr-light;
   text-align: center;
 }
 
-.section__title--projects {
+.section__title--projects,
+.section__title--blogs,
+.section__title--interests {
   color: base.$clr-accent;
   position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 0em;
+    background: base.$clr-accent;
+    opacity: 0.25;
+  }
 }
 
-.section__title--projects::after {
-  content: "";
-  display: block;
-  width: 2em;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background: base.$clr-light;
-  opacity: 0.25;
+.section__subtitle--projects,
+.section__subtitle--blogs,
+.section__subtitle--interests {
+  margin-bottom: 2em;
+  font-weight: base.$fw-bold;
 }
 
 .projects {
@@ -33,15 +38,42 @@
   margin: 0 auto;
 }
 
+.project__title {
+  margin-bottom: 2em;
+  font-size: base.$fs-h3;
+}
+
+.project__icon {
+  font-size: 50px;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2em;
+}
+
+.project__links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 5em;
+}
+
+.project__link {
+  color: base.$clr-light;
+}
+
 @media (min-width: 800px) {
   .projects {
     display: flex;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .project + .project {
-    // margin-left: 2em;
   }
 }

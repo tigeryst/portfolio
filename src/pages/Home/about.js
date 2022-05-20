@@ -1,6 +1,6 @@
 import React from "react";
 
-import aboutImg from "../../images/me-about.png";
+import aboutImg from "../../images/me-about.jpg";
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
 
       <img
         src={aboutImg}
-        alt="Tiger posing in front of a pink wall"
+        alt="Tiger chilling on a picnic mat on a nice sunny day"
         className="about-me__img"
       />
     </section>

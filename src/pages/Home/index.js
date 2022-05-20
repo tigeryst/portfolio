@@ -5,7 +5,6 @@ import Projects from "./projects";
 import Blogs from "./blogs";
 import Interests from "./interests";
 import About from "./about";
-import Contact from "./contact";
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <Blogs />
       <Interests />
       <About />
-      <Contact />
     </>
   );
 };

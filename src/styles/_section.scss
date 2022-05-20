@@ -2,6 +2,11 @@
 
 .section__title {
   margin-bottom: 0.25em;
+  font-size: base.$fs-h1;
+}
+
+.section__subtitle {
+  font-size: base.$fs-h3;
 }
 
 .section__title--intro {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -8,9 +9,9 @@ const Projects = () => {
 
       <div className="projects">
         <div className="project">
-          <h3>ERP Application</h3>
+          <h3 className="project__title">ERP Application</h3>
           {/* <i classsName="project__icon"></i> */}
-          <i className="fab fa-react fa-lg"></i>
+          <i className="project__icon fab fa-react fa-lg"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -38,17 +39,20 @@ const Projects = () => {
           </ul>
           <ul className="project__links">
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--secondary">
                 demo
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--primary">
                 read more
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <a
+                href="https://github.com/tigeryst"
+                className="btn btn--secondary"
+              >
                 github
               </a>
             </li>
@@ -56,9 +60,9 @@ const Projects = () => {
         </div>
 
         <div className="project">
-          <h3>Pablo App</h3>
+          <h3 className="project__title">Pablo App</h3>
           {/* <i classsName="project__icon"></i> */}
-          <i className="fab fa-react fa-lg"></i>
+          <i className="project__icon fab fa-react fa-lg"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -86,17 +90,20 @@ const Projects = () => {
           </ul>
           <ul className="project__links">
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--secondary">
                 demo
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--primary">
                 read more
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <a
+                href="https://github.com/tigeryst"
+                className="btn btn--secondary"
+              >
                 github
               </a>
             </li>
@@ -104,9 +111,9 @@ const Projects = () => {
         </div>
 
         <div className="project">
-          <h3>Yelp Camp</h3>
+          <h3 className="project__title">Yelp Camp</h3>
           {/* <i classsName="project__icon"></i> */}
-          <i className="fab fa-react fa-lg"></i>
+          <i className="project__icon fab fa-react fa-lg"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -134,17 +141,20 @@ const Projects = () => {
           </ul>
           <ul className="project__links">
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--secondary">
                 demo
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <Link to="/projects" className="btn btn--primary">
                 read more
-              </a>
+              </Link>
             </li>
             <li className="project__link">
-              <a href="/projects" className="btn btn--primary">
+              <a
+                href="https://github.com/tigeryst"
+                className="btn btn--secondary"
+              >
                 github
               </a>
             </li>
@@ -152,9 +162,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <a href="/projects" className="btn btn--primary">
+      <Link to="/projects" className="btn btn--primary">
         see more projects
-      </a>
+      </Link>
     </section>
   );
 };

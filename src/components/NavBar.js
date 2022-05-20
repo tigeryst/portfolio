@@ -22,7 +22,6 @@ class NavBar extends React.Component {
       Blogs: "blogs",
       Interests: "interests",
       About: "about",
-      Contact: "contact",
     };
   }
 
@@ -47,7 +46,7 @@ class NavBar extends React.Component {
   }
 
   handleLinkClick() {
-    this.setState({ isCollapsed: false });
+    this.setState({ isCollapsed: true });
   }
 
   render() {
@@ -63,7 +62,7 @@ class NavBar extends React.Component {
         <NavLinks
           // isCollapsed={this.state.isCollapsed}
           links={this.links}
-          onClick={this.handleHamburgerClick}
+          onClick={this.handleLinkClick}
         />
         <Hamburger
           // isCollapsed={this.state.isCollapsed}

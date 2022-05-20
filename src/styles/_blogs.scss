@@ -1,0 +1,41 @@
+@use "base";
+
+.section__title--blogs {
+  text-align: center;
+  // color: base.$clr-accent;
+}
+
+.section__subtitle--blogs {
+  text-align: center;
+  // color: base.$clr-accent;
+}
+
+.blog__title {
+  text-decoration: none;
+  color: inherit;
+  font-size: base.$fs-h3;
+  font-weight: base.$fw-bold;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.blog__post {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blogs {
+    margin-bottom: 3em;
+}
+
+.my-blogs .btn {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    // align-self: center;
+    // text-align: center;
+    // color: red;
+}
