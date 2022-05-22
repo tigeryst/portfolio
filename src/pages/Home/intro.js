@@ -19,11 +19,11 @@ const Intro = () => {
       />
       <p className="intro__body">
         "Any technology sufficiently advanced enough is indistinguishable from
-        magic." And so I'm learning a little more everyday so that one day I
+        magic." I'm learning a little more everyday so that one day I
         might create my own little magic that would spark the creation of even
         more new magic.
       </p>
-      <ul className="intro__actions">
+      <ul className="intro__actions btns">
         <li>
           <a href={cv} className="btn btn--primary" download>
             Get My CV
