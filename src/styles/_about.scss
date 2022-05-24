@@ -1,43 +1,34 @@
 @use "base";
-/* About me section */
-
-.about-me {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
 .about-me__img {
   box-shadow: base.$bs;
 }
 
-@media (min-width: 600px) {
+.section__title--about {
+  text-align: center;
+}
+
+@media (min-width: base.$bp-tablet) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 0.3fr;
     grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
+      "title image"
+      "body image";
     grid-column-gap: 2em;
+    align-items: center;
   }
 
   .section__title--about {
     grid-area: title;
+    text-align: left;
   }
 
-  .section__subtitle--about {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
+  .about-me__body {
+    grid-area: body;
   }
 
   .about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
+    grid-area: image;
   }
 }

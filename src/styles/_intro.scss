@@ -68,8 +68,6 @@
       "image body"
       "image actions";
     justify-items: start;
-    max-width: 90%;
-    margin: 0 auto;
   }
   .section__title--intro {
     margin-bottom: auto;
@@ -100,13 +98,5 @@
 @media (min-width: base.$bp-laptop) {
   .intro {
     grid-template-columns: 0.7fr 1fr;
-    max-width: 80%;
-  }
-}
-
-@media (min-width: base.$bp-desktop) {
-  .intro {
-    grid-template-columns: 0.7fr 1fr;
-    max-width: 70%;
   }
 }

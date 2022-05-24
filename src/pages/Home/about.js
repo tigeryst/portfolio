@@ -6,9 +6,6 @@ const About = () => {
   return (
     <section className="about-me" id="about">
       <h2 className="section__title section__title--about">About Me</h2>
-      {/* <p className="section__subtitle section__subtitle--about">
-      Designer & developer based out of NYC
-    </p> */}
 
       <div className="about-me__body">
         <p>
@@ -26,9 +23,9 @@ const About = () => {
       </div>
 
       <img
+        className="about-me__img"
         src={aboutImg}
         alt="Tiger chilling on a picnic mat on a nice sunny day"
-        className="about-me__img"
       />
     </section>
   );

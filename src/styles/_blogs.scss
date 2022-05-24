@@ -2,7 +2,6 @@
 
 .section__title--blogs {
   text-align: center;
-  // color: base.$clr-accent;
 }
 
 .section__subtitle--blogs {
@@ -28,14 +27,11 @@
 }
 
 .blogs {
-    margin-bottom: 3em;
+    margin: 0 auto 3em;
 }
 
 .my-blogs .btn {
     display: block;
     width: max-content;
     margin: 0 auto;
-    // align-self: center;
-    // text-align: center;
-    // color: red;
 }
