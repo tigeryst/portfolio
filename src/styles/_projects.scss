@@ -1,50 +1,49 @@
-/* My projects section */
 @use "base";
+
 .my-projects {
   background: base.$clr-dark;
   color: base.$clr-light;
   text-align: center;
 }
 
-.section__title--projects,
-.section__title--blogs,
-.section__title--interests {
-  color: base.$clr-accent;
-  position: relative;
-  &::after {
-    content: "";
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 0em;
-    background: base.$clr-accent;
-    opacity: 0.25;
-  }
-}
-
-.section__subtitle--projects,
-.section__subtitle--blogs,
-.section__subtitle--interests {
-  margin-bottom: 2em;
-  font-weight: base.$fw-bold;
-}
-
 .projects {
+  display: grid;
   margin-bottom: 4em;
+  gap: 3em;
 }
 
 .project {
-  max-width: 500px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "icon"
+    "description"
+    "lessons"
+    "tech"
+    "actions";
 }
 
 .project__title {
-  margin-bottom: 2em;
+  grid-area: title;
+  margin: 0 auto 1em;
   font-size: base.$fs-h3;
 }
 
 .project__icon {
-  font-size: 50px;
+  grid-area: icon;
+  font-size: base.$fs-h1;
+}
+
+.project__description {
+  grid-area: description;
+}
+
+.project__lessons {
+  grid-area: lessons;
+}
+
+.project__tech {
+  grid-area: tech;
 }
 
 .tech-stack {
@@ -53,27 +52,64 @@
   gap: 1em;
   list-style: none;
   padding: 0;
-  margin: 0 auto 2em;
+  padding-bottom: 16px;
+  margin: 0;
+  font-size: base.$fs-h2;
 }
 
 .project__links {
-  display: flex;
+  grid-area: actions;
   justify-content: center;
   gap: 1em;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 5em;
 }
 
-.project__link {
-  color: base.$clr-light;
-}
-
-@media (min-width: 800px) {
+@media (min-width: base.$bp-tablet) {
   .projects {
-    display: flex;
-    max-width: 1000px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    column-gap: 2em;
+  }
+
+  .project {
+    flex-wrap: wrap;
+    column-gap: 2em;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas:
+      "blank title"
+      "actions icon"
+      "actions description"
+      "actions lessons"
+      "actions tech";
+  }
+
+  .project__links {
+    align-self: start;
+    order: -1;
+    flex-direction: column;
+  }
+
+  .project__link > * {
+    width: 100%;
+  }
+}
+
+@media (min-width: base.$bp-laptop) {
+  .projects {
+    max-width: 80%;
+  }
+
+  .project {
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+
+@media (min-width: base.$bp-desktop) {
+  .projects {
+    max-width: 70%;
+  }
+
+  .project {
+    grid-template-columns: 0.3fr 1fr;
   }
 }

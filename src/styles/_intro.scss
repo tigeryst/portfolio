@@ -1,7 +1,5 @@
 @use "base";
 
-/* Intro section */
-
 .intro {
   display: grid;
   gap: 2em;
@@ -76,7 +74,7 @@
   .section__title--intro {
     margin-bottom: auto;
   }
-  
+
   .intro__roles {
     flex-direction: column;
     align-items: start;
@@ -112,45 +110,3 @@
     max-width: 70%;
   }
 }
-
-// .section__subtitle--intro {
-//   display: inline-block;
-// }
-
-// @media (min-width: base.$bp-tablet) {
-//   .intro {
-//     display: grid;
-//     width: min-content;
-//     margin: 0 auto;
-//     grid-column-gap: 1em;
-//     grid-template-areas:
-//       "img title"
-//       "img roles"
-//       "img body"
-//       "img ";
-//     grid-template-columns: min-content max-content;
-//   }
-
-//   .intro__img {
-//     grid-area: img;
-//   }
-
-//   .section__title--intro {
-//     grid-area: title;
-//   }
-// }
-//     // min-width: 250px;
-//     position: relative;
-//     z-index: 2;
-//   }
-
-//   .section__subtitle--intro {
-//     align-self: start;
-//     grid-column: -1 / 1;
-//     grid-row: 2;
-//     text-align: right;
-//     position: relative;
-//     left: -1.5em;
-//     width: calc(100% + 1.5em);
-//   }
-// }

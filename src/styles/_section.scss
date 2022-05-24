@@ -11,3 +11,44 @@
   font-size: base.$fs-h3;
   font-weight: base.$fw-bold;
 }
+
+.section__title--projects,
+.section__title--blogs,
+.section__title--interests {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 0em;
+    background: base.$clr-accent;
+    opacity: 0.25;
+  }
+}
+
+// @media (min-width: base.$bp-tablet) {
+//   section {
+
+//     max-width: 90%;
+
+//   }
+
+
+
+// }
+
+// @media (min-width: base.$bp-laptop) {
+//   section {
+
+//     max-width: 80%;
+//   }
+// }
+
+// @media (min-width: base.$bp-desktop) {
+//   section {
+
+//     max-width: 70%;
+//   }
+// }
+
