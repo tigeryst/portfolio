@@ -63,6 +63,11 @@
   gap: 1em;
 }
 
+.project__link .btn {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 @media (min-width: base.$bp-tablet) {
   .projects {
     column-gap: 2em;
