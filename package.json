@@ -7,9 +7,9 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "npm run build && node server/index.js",
-    "watch-client": "npx webpack serve --open --config webpack.dev.js",
+    "watch-client": "npx webpack serve --open-app-name \"Google Chrome\" --config webpack.dev.js",
     "watch-server": "nodemon -r dotenv/config server/index.js",
-    "dev": "concurrently --kill-others-on-fail \"npm:watch-*\""
+    "dev": "concurrently --kill-others-on-fail \"npm:watch-*\" \"code .\""
   },
   "author": "Tiger Yotsawat",
   "license": "ISC",
