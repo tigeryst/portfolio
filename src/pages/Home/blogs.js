@@ -12,14 +12,11 @@ const Blogs = () => {
       <div className="blogs">
         <div className="blog">
           <Link to="/blogs/#" className="blog__title">
-            Technology trends in 2021
+            Technology trends in 2022
           </Link>
-          <p className="blog__date">30, Dec 2021</p>
+          <p className="blog__date">30, May 2022</p>
           <p className="blog__post">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            
           </p>
         </div>
 
@@ -27,12 +24,14 @@ const Blogs = () => {
           <Link to="/blogs/#" className="blog__title">
             What I learned from investing
           </Link>
-          <p className="blog__date">30, Dec 2021</p>
+          <p className="blog__date">01, Jan 2022</p>
           <p className="blog__post">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            Learning to invest is something that I found really challenging.
+            With all the jargons to learn and all the noise and hype to filter
+            out from genuine advice, it can be a tough maze to navigate for new
+            investors. In this post, I hope to highlight key resources which I
+            found really useful in learning the basics of investing and to share
+            some of the learning points that I came across over the past year.
           </p>
         </div>
 
@@ -42,10 +41,16 @@ const Blogs = () => {
           </Link>
           <p className="blog__date">30, Dec 2021</p>
           <p className="blog__post">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            Web development is my favourite hobby. There is just so much to
+            learn in this broad field, and with all the different web
+            applications that we see and use on a day to day basis, we can all
+            probably appreciate that the possibilities are endless. This blog is
+            my attempt to record my journey from "Wow, this website has such a
+            smooth interface." to "Hey, I can probably build something like
+            this!". I hope that by sharing my experience learning web
+            development, this would hint at possible footholds to people staring
+            at this seemingly tall wall dividing the 'creators' from the
+            'users', wondering how to scale it.
           </p>
         </div>
       </div>
