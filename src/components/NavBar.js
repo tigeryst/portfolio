@@ -56,7 +56,14 @@ class NavBar extends React.Component {
           this.state.isScrolled ? "navbar--scrolled" : ""
         }`}
       >
-        <Link to="home" className="logo" smooth={true} delay={0} offset={-45}>
+        <Link
+          to="home"
+          className="logo"
+          smooth={true}
+          delay={0}
+          offset={-45}
+          duration={250}
+        >
           <img src={logoImg} alt="Logo: white TY on a black background" />
         </Link>
         <NavLinks

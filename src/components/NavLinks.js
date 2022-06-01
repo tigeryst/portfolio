@@ -19,8 +19,8 @@ class NavLinks extends React.Component {
           className="nav__link"
           smooth={true}
           delay={0}
+          duration={250}
           activeClass="nav__link--active"
-          // spy={true}
           offset={-45}
           onClick={this.handleClick}
         >
