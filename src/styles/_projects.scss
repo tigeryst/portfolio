@@ -12,6 +12,10 @@
   gap: 3em;
 }
 
+.section__subtitle--projects {
+  margin-bottom: 2em;
+}
+
 .project {
   display: grid;
   grid-template-areas:
@@ -21,25 +25,44 @@
     "lessons"
     "tech"
     "actions";
+  text-align: center;
 }
 
 .project__title {
   grid-area: title;
-  margin: 0 auto 1em;
+  // margin: 0 auto 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
   font-size: base.$fs-h3;
+  // text-align: center;
 }
 
 .project__icon {
   grid-area: icon;
   font-size: base.$fs-h1;
+  // text-align: center;
 }
 
 .project__description {
   grid-area: description;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.project__description a,
+.project__description a:visited {
+  color: inherit;
 }
 
 .project__lessons {
   grid-area: lessons;
+  text-align: left;
+  :first-child {
+    text-align: center;
+  }
+  :nth-child(2) {
+    margin-bottom: 0;
+  }
 }
 
 .project__tech {
@@ -55,6 +78,7 @@
   padding-bottom: 16px;
   margin: 0;
   font-size: base.$fs-h2;
+  // text-align: center;
 }
 
 .project__links {
